@@ -21,7 +21,8 @@ weatherForm.addEventListener('submit', (e) => {
             messageOne.textContent = '' + data.location
             messageTwo.textContent = data.forecast.summary +
                 ' The temperature is ' + data.forecast.temperature + 'F with a ' +
-                data.forecast.precipProb + '% chance of rain.'
+                data.forecast.precipProb + '% chance of rain. ' +
+                'It currently feels like ' + data.forecast.feelsLike + 'F.'
         })
     })
 })
